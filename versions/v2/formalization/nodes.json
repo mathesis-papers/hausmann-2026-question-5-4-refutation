@@ -1,0 +1,204 @@
+{
+  "nodes": [
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s1",
+      "contributor": null,
+      "identity": "collected:hausmann-2026-question-5-4-refutation:2:s1",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "6974dba01daa1a25cc74b87a86c191e95fe2c681",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Combinatorics/Graph/ComponentPacking/HausmannQuestion54Refutation.lean"
+      },
+      "lineage": "collected:hausmann-2026-question-5-4-refutation:s1",
+      "macros": {
+        "\\GP": "\\operatorname{GP}",
+        "\\cc": "\\operatorname{cc}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "hausmann-2026-question-5-4-refutation",
+      "scope": "in_scope",
+      "statement": "The graph $H$ is connected and cubic, has odd girth exactly five, and\nsatisfies $\\kappa(H)=4$. Consequently Hausmann's Question 5.4 has a\nnegative answer.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Residual order four in GP(7,2): an alternative proof for Hausmann's Question 5.4 (arXiv:2611.05178v1, Section 5), after AFTD (2026)",
+      "toolchain": null,
+      "version": 2,
+      "work": "hausmann-2026-question-5-4-refutation"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s2",
+      "contributor": null,
+      "identity": "collected:hausmann-2026-question-5-4-refutation:2:s2",
+      "kind": "paper",
+      "label": "Lemma",
+      "lean_source": {
+        "revision": "6974dba01daa1a25cc74b87a86c191e95fe2c681",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Combinatorics/Graph/ComponentPacking/HausmannQuestion54Refutation.lean"
+      },
+      "lineage": "collected:hausmann-2026-question-5-4-refutation:s2",
+      "macros": {
+        "\\GP": "\\operatorname{GP}",
+        "\\cc": "\\operatorname{cc}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "hausmann-2026-question-5-4-refutation",
+      "scope": "in_scope",
+      "statement": "Every maximal independent set of $H$ is equivalent to one of the five\nsets in Table~\\ref{tab:classes} under a simultaneous rotation or reflection\nof the two index sets.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Residual order four in GP(7,2): an alternative proof for Hausmann's Question 5.4 (arXiv:2611.05178v1, Section 5), after AFTD (2026)",
+      "toolchain": null,
+      "version": 2,
+      "work": "hausmann-2026-question-5-4-refutation"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s3",
+      "contributor": null,
+      "identity": "collected:hausmann-2026-question-5-4-refutation:2:s3",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "6974dba01daa1a25cc74b87a86c191e95fe2c681",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Combinatorics/Graph/ComponentPacking/HausmannQuestion54Refutation.lean"
+      },
+      "lineage": "collected:hausmann-2026-question-5-4-refutation:s3",
+      "macros": {
+        "\\GP": "\\operatorname{GP}",
+        "\\cc": "\\operatorname{cc}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "hausmann-2026-question-5-4-refutation",
+      "scope": "in_scope",
+      "statement": "Let $K_5$ be the least integer such that every finite simple subcubic\ngraph of odd girth five has an independent set whose complementary\ncomponents have order at most $K_5$. Then $4\\leq K_5\\leq6$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Residual order four in GP(7,2): an alternative proof for Hausmann's Question 5.4 (arXiv:2611.05178v1, Section 5), after AFTD (2026)",
+      "toolchain": null,
+      "version": 2,
+      "work": "hausmann-2026-question-5-4-refutation"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s4",
+      "contributor": null,
+      "identity": "collected:hausmann-2026-question-5-4-refutation:2:s4",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "6974dba01daa1a25cc74b87a86c191e95fe2c681",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Combinatorics/Graph/ComponentPacking/HausmannQuestion54Refutation.lean"
+      },
+      "lineage": "collected:hausmann-2026-question-5-4-refutation:s4",
+      "macros": {
+        "\\GP": "\\operatorname{GP}",
+        "\\cc": "\\operatorname{cc}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "hausmann-2026-question-5-4-refutation",
+      "scope": "in_scope",
+      "statement": "If a finite graph $G$ contains $H$ as an induced subgraph, then\n$\\kappa(G)\\geq4$. For every positive integer $t$ and every finite\nbipartite graph $B$, $\\kappa(tH\\mathbin{\\dot\\cup}B)=4$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Residual order four in GP(7,2): an alternative proof for Hausmann's Question 5.4 (arXiv:2611.05178v1, Section 5), after AFTD (2026)",
+      "toolchain": null,
+      "version": 2,
+      "work": "hausmann-2026-question-5-4-refutation"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s5",
+      "contributor": null,
+      "identity": "collected:hausmann-2026-question-5-4-refutation:2:s5",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "6974dba01daa1a25cc74b87a86c191e95fe2c681",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Combinatorics/Graph/ComponentPacking/HausmannQuestion54Refutation.lean"
+      },
+      "lineage": "collected:hausmann-2026-question-5-4-refutation:s5",
+      "macros": {
+        "\\GP": "\\operatorname{GP}",
+        "\\cc": "\\operatorname{cc}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "hausmann-2026-question-5-4-refutation",
+      "scope": "in_scope",
+      "statement": "With empty parts allowed, the condition printed in Question 5.3 holds\nfor every graph by taking $L=\\varnothing$. In contrast, $H$ admits no\nsuch partition with $L\\ne\\varnothing$. In particular, $H$ admits no\nsuch partition with the additional condition that $H[R]$ is bipartite.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Residual order four in GP(7,2): an alternative proof for Hausmann's Question 5.4 (arXiv:2611.05178v1, Section 5), after AFTD (2026)",
+      "toolchain": null,
+      "version": 2,
+      "work": "hausmann-2026-question-5-4-refutation"
+    }
+  ]
+}

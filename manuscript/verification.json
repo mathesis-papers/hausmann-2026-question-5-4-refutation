@@ -1,0 +1,224 @@
+{
+  "attaining_components": [
+    [
+      1,
+      3,
+      8,
+      10
+    ],
+    [
+      7,
+      9,
+      11
+    ],
+    [
+      5,
+      6
+    ]
+  ],
+  "attaining_independent_set": [
+    0,
+    2,
+    4,
+    12,
+    13
+  ],
+  "component_methods_agree": true,
+  "component_union_bipartiteness": {
+    "extension_checks_on_satisfying_nonempty_sets": 0,
+    "extension_property": "Written proof; the nonempty satisfying-set family is empty on this graph.",
+    "independent_solutions": [
+      []
+    ],
+    "maximal_class_odd_cycles": [
+      {
+        "odd_cycle": [
+          4,
+          5,
+          6,
+          13,
+          11
+        ],
+        "selected_vertex": 4
+      },
+      {
+        "odd_cycle": [
+          2,
+          1,
+          8,
+          10,
+          3
+        ],
+        "selected_vertex": 2
+      },
+      {
+        "odd_cycle": [
+          11,
+          4,
+          5,
+          6,
+          13
+        ],
+        "selected_vertex": 11
+      },
+      {
+        "odd_cycle": [
+          4,
+          5,
+          6,
+          13,
+          11
+        ],
+        "selected_vertex": 0
+      },
+      {
+        "odd_cycle": [
+          0,
+          1,
+          2,
+          9,
+          7
+        ],
+        "selected_vertex": 0
+      }
+    ],
+    "nonempty_independent_solutions": 0
+  },
+  "connected": true,
+  "degree": 3,
+  "dihedral_classes": [
+    {
+      "component_orders": [
+        6,
+        2,
+        1
+      ],
+      "independent_set": [
+        0,
+        2,
+        4,
+        8,
+        12
+      ],
+      "orbit_size": 14,
+      "residual_path": [
+        5,
+        6,
+        13,
+        11
+      ]
+    },
+    {
+      "component_orders": [
+        4,
+        3,
+        2
+      ],
+      "independent_set": [
+        0,
+        2,
+        4,
+        12,
+        13
+      ],
+      "orbit_size": 7,
+      "residual_path": [
+        1,
+        8,
+        10,
+        3
+      ]
+    },
+    {
+      "component_orders": [
+        6,
+        2,
+        1
+      ],
+      "independent_set": [
+        0,
+        2,
+        8,
+        11,
+        12
+      ],
+      "orbit_size": 7,
+      "residual_path": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "component_orders": [
+        5,
+        2,
+        1,
+        1
+      ],
+      "independent_set": [
+        0,
+        3,
+        8,
+        9,
+        12
+      ],
+      "orbit_size": 7,
+      "residual_path": [
+        6,
+        5,
+        4,
+        11
+      ]
+    },
+    {
+      "component_orders": [
+        4,
+        4,
+        1
+      ],
+      "independent_set": [
+        0,
+        3,
+        8,
+        11,
+        12
+      ],
+      "orbit_size": 14,
+      "residual_path": [
+        1,
+        2,
+        9,
+        7
+      ]
+    }
+  ],
+  "earlier_wagner_graph": {
+    "edges": 12,
+    "independent_sets": 33,
+    "minimum_largest_residual_component_order": 4,
+    "odd_girth": 5,
+    "partitions_with_residual_order_at_most_three": 0,
+    "subsets": 256,
+    "vertices": 8
+  },
+  "edges": 21,
+  "graph": "GP(7,2)",
+  "independent_set_size_distribution": {
+    "0": 1,
+    "1": 14,
+    "2": 70,
+    "3": 154,
+    "4": 147,
+    "5": 49
+  },
+  "independent_sets": 435,
+  "labels": "a_i=i; b_i=7+i; indices modulo 7",
+  "maximal_independent_sets": 49,
+  "minimum_largest_residual_component_order": 4,
+  "odd_girth": 5,
+  "partitions_with_residual_order_at_most_three": 0,
+  "subsets": 16384,
+  "vertices": 14
+}

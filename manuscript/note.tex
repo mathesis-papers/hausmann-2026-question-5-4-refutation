@@ -1,0 +1,338 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=blue,citecolor=blue,linkcolor=blue,
+  pdftitle={Residual order four in GP(7,2): an alternative proof for Hausmann's Question 5.4 (arXiv:2611.05178v1, Section 5), after AFTD (2026)},
+  pdfauthor={Haobo Ma and Wenlin Zhang}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newcommand{\GP}{\operatorname{GP}}
+\newcommand{\cc}{\operatorname{cc}}
+\title{Residual order four in $\GP(7,2)$:\\
+  an alternative proof for Hausmann's Question 5.4\\
+  \large arXiv:2611.05178v1, Section 5; after AFTD (2026)}
+\author{Haobo Ma\\\small ChronoAI Pte Ltd, Singapore
+  \and Wenlin Zhang\\\small National University of Singapore\\
+  \small ChronoAI Pte Ltd, Singapore}
+\date{November 9, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Following AFTD's negative answer dated November 5, 2026, to Hausmann's
+Question 5.4 in \emph{Weighted Max Cut in Subcubic Graphs}
+(arXiv:2611.05178v1, Section 5), we give a different counterexample
+with an exact residual-order calculation: the generalized
+Petersen graph $\GP(7,2)$ has odd girth five, but deleting any independent
+set leaves a component with at least four vertices. We prove this by
+classifying its maximal independent sets into five symmetry classes.
+The bound four is attained on this graph.
+The same classification gives an obstruction to the nonempty-independent-side
+version of Question 5.3; its printed quantifiers admit an empty-side solution.
+\end{abstract}
+
+\section{The question and the counterexample}
+Hausmann asks whether every finite simple subcubic graph of odd girth
+exactly five admits a partition $V(G)=L\mathbin{\dot\cup}R$ with $L$
+independent and every connected component of $G[R]$ of order at most
+three \cite[Question 5.4]{hausmann}. Here order counts vertices, including
+isolated vertices, and odd girth means the length of a shortest odd cycle.
+The graph below answers this question negatively even within connected cubic graphs.
+AFTD \cite{aftd} previously gave the eight-vertex Wagner graph as a
+counterexample. Our alternative uses $\GP(7,2)$ and determines its exact
+residual component-order optimum by a complete five-class argument.
+
+For a nonempty finite graph define
+\[
+ \kappa(G)=\min_{L\text{ independent}}
+       \max_{C\in\cc(G[V(G)\setminus L])}|V(C)|,
+\]
+where the maximum is zero for an empty complement.
+Let $H=\GP(7,2)$ have vertices $a_i,b_i$, indexed modulo seven, and edges
+\begin{equation}\label{eq:edges}
+ a_i a_{i+1},\qquad a_i b_i,\qquad b_i b_{i+2}
+ \quad(i\in\mathbb Z/7\mathbb Z).
+\end{equation}
+\begin{theorem}\label{thm:main}
+The graph $H$ is connected and cubic, has odd girth exactly five, and
+satisfies $\kappa(H)=4$. Consequently Hausmann's Question 5.4 has a
+negative answer.
+\end{theorem}
+
+For comparison, Hausmann's Lemma 4.7, attributed there to Berke and
+Szab\'o, gives a residual component bound of six in triangle-free
+subcubic graphs. A different sufficient condition is the maximum-average-degree
+bound of Cranston and Yancey \cite[Theorem 1, $k=3$]{cranston}:
+$\operatorname{mad}(G)\leq18/7$ guarantees an independent set whose
+complement is a forest with components of order at most three.
+Since $H$ is cubic, $\operatorname{mad}(H)=3$; this hypothesis is absent
+from Question 5.4. The counterexample concerns the proposed partition,
+not the weighted maximum-cut inequality it was intended to imply.
+
+\section{A complete classification proof}
+Both layers in \eqref{eq:edges} are seven-cycles, and the spokes form
+a matching. This proves simplicity, degree three, and connectedness.
+A triangle within a layer is impossible. A triangle using both layers
+would use two spokes sharing an endpoint, also impossible. The cycle
+$a_0a_1a_2b_2b_0a_0$ has length five, so the odd girth is five.
+
+\begin{lemma}\label{lem:classes}
+Every maximal independent set of $H$ is equivalent to one of the five
+sets in Table~\ref{tab:classes} under a simultaneous rotation or reflection
+of the two index sets.
+\end{lemma}
+\begin{proof}
+Write $A=\{i:a_i\in L\}$ and $B=\{i:b_i\in L\}$. Maximality means that
+every vertex outside $L$ has a neighbor in $L$. Since the $a$-layer is a
+seven-cycle, $|A|\leq3$.
+If $A$ is empty, every $b_i$ must be selected to dominate $a_i$, which
+contradicts independence. If $A=\{0\}$ after a rotation, domination of
+$a_2,a_3,a_4,a_5$ forces $b_2,b_3,b_4,b_5\in L$, contradicting the edge
+$b_2b_4$. Thus $|A|$ is two or three.
+
+Suppose $|A|=2$. Rotation and reflection give $A=\{0,2\}$ or
+$A=\{0,3\}$. In the first case, domination of $a_4,a_5$ forces
+$b_4,b_5\in L$. Independence excludes $b_0,b_2,b_3,b_6$; domination
+of $b_1$ then forces $b_1\in L$. This gives row III.
+In the second case, $b_5$ is forced by $a_5$, while $b_0,b_3$ are
+excluded. The other available inner vertices induce the path
+$b_1b_6b_4b_2$. Their selected vertices must form a maximal independent
+set of that path. For a path $x_1x_2x_3x_4$ the only such sets are
+$\{x_1,x_3\}$, $\{x_1,x_4\}$, and $\{x_2,x_4\}$: select $x_1$ and
+dominate the last edge, or omit $x_1$ and force $x_2,x_4$.
+Thus $B$ is $\{1,4,5\}$, $\{1,2,5\}$, or $\{2,5,6\}$.
+The reflection $i\mapsto3-i$ exchanges the first and third, giving
+rows IV and V.
+
+Suppose $|A|=3$. The cyclic gaps between its indices are at least two
+and sum to seven, so they are $2,2,3$. Hence take $A=\{0,2,4\}$.
+Every outer vertex is already dominated. The available inner vertices
+induce the path $b_6b_1b_3b_5$, whose maximal independent sets are
+$\{b_6,b_3\}$, $\{b_6,b_5\}$, and $\{b_1,b_5\}$.
+The reflection $i\mapsto4-i$ exchanges the first and third.
+These are rows I and II. Directly from \eqref{eq:edges}, each listed
+set is independent and dominates every vertex outside it.
+\end{proof}
+
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{@{}clll@{}}
+\toprule
+Row & $\{i:a_i\in L\}$ & $\{i:b_i\in L\}$ & A path in $H-L$\\
+\midrule
+I   & $\{0,2,4\}$ & $\{1,5\}$   & $a_5a_6b_6b_4$\\
+II  & $\{0,2,4\}$ & $\{5,6\}$   & $a_1b_1b_3a_3$\\
+III & $\{0,2\}$   & $\{1,4,5\}$ & $a_3a_4a_5a_6$\\
+IV  & $\{0,3\}$   & $\{1,2,5\}$ & $a_6a_5a_4b_4$\\
+V   & $\{0,3\}$   & $\{1,4,5\}$ & $a_1a_2b_2b_0$\\
+\bottomrule
+\end{tabular}
+\caption{The five maximal-independent-set classes and four connected
+vertices outside each representative.}\label{tab:classes}
+\end{table}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+The graph properties were established above. Every independent set
+$L$ extends to a maximal independent set $L^*$. Lemma~\ref{lem:classes}
+and Table~\ref{tab:classes} supply a four-vertex path in $H-L^*$.
+Rotations and reflections preserve \eqref{eq:edges}, so the same holds
+for every representative's image. Since $H-L^*$ is an induced subgraph
+of $H-L$, those four vertices remain in one component of $H-L$.
+Thus $\kappa(H)\geq4$.
+
+For the reverse inequality, take row II:
+$L=\{a_0,a_2,a_4,b_5,b_6\}$. Its complementary components are precisely
+\[
+ \{a_1,b_1,b_3,a_3\},\qquad
+ \{b_0,b_2,b_4\},\qquad
+ \{a_5,a_6\}.
+\]
+Equation~\eqref{eq:edges} shows that these are paths of orders $4,3,2$,
+with no edges between them. Hence $\kappa(H)\leq4$.
+\end{proof}
+
+\section{Consequences and the neighboring question}
+\begin{corollary}\label{cor:universal}
+Let $K_5$ be the least integer such that every finite simple subcubic
+graph of odd girth five has an independent set whose complementary
+components have order at most $K_5$. Then $4\leq K_5\leq6$.
+\end{corollary}
+\begin{proof}
+Theorem~\ref{thm:main} gives the lower bound. Every graph in this class
+is triangle-free, so the Berke--Szab\'o bound stated in
+\cite[Lemma 4.7]{hausmann} gives the upper bound.
+\end{proof}
+Thus the existence of a constant, asked in the discussion of
+\cite[Section 5, item 2]{aftd}, follows from that prior order-six bound.
+The choices $K_5=4,5,6$ are not distinguished here.
+
+\begin{corollary}\label{cor:induced}
+If a finite graph $G$ contains $H$ as an induced subgraph, then
+$\kappa(G)\geq4$. For every positive integer $t$ and every finite
+bipartite graph $B$, $\kappa(tH\mathbin{\dot\cup}B)=4$.
+\end{corollary}
+\begin{proof}
+For any independent $L$ of $G$, its restriction to $H$ is independent.
+Four vertices connected in $H-L$ remain connected in $G-L$, proving
+the first assertion. On a disjoint union, independent sets can be chosen
+separately in each component, so $\kappa$ is the maximum of their
+individual values. A bipartition class of $B$ leaves an independent
+complement, of component order at most one. Apply Theorem~\ref{thm:main}
+to each copy of $H$.
+\end{proof}
+
+Question 5.3 of \cite[Section 5]{hausmann} requires $L$ independent
+and $G[V(C)\cup\{v\}]$ bipartite for every residual component $C$
+and every $v\in L$. The printed statement has no separate requirement
+that $G[R]$ be bipartite, whereas Theorem 2.2 of that paper does.
+We allow empty parts in a vertex partition and distinguish the printed
+quantifiers from their nonempty strengthening.
+
+\begin{corollary}\label{cor:neighbor}
+With empty parts allowed, the condition printed in Question 5.3 holds
+for every graph by taking $L=\varnothing$. In contrast, $H$ admits no
+such partition with $L\ne\varnothing$. In particular, $H$ admits no
+such partition with the additional condition that $H[R]$ is bipartite.
+\end{corollary}
+\begin{proof}
+The first assertion is vacuous universal quantification over $v\in L$.
+Suppose that $L\ne\varnothing$ satisfies the condition. Then $H[R]$
+is bipartite, since each residual component is an induced subgraph
+of its union with any fixed $v\in L$.
+Move any vertex $u\in R$ with no neighbor in $L$ into $L$.
+Independence is preserved. Each new residual component $C'$ is contained
+in an old one $C$. For each old $v\in L$, $H[V(C')\cup\{v\}]$ is
+an induced subgraph of $H[V(C)\cup\{v\}]$; for the new vertex $u$,
+it is an induced subgraph of the old bipartite graph $H[R]$.
+Thus the condition persists until $L$ is maximal independent.
+
+Use the five classes of Lemma~\ref{lem:classes}. In the table below,
+each displayed odd cycle lies in $H[V(C)\cup\{v\}]$ for some
+component $C$ of the corresponding complement and the indicated $v\in L$.
+The repeated starting vertex is omitted. In row IV the cycle lies
+entirely in $C$. Each edge follows from \eqref{eq:edges}.
+\begin{center}
+\small
+\begin{tabular}{@{}cll@{}}
+\toprule
+Class & $v$ & Odd cycle\\
+\midrule
+I & $a_4$ & $a_4a_5a_6b_6b_4$\\
+II & $a_2$ & $a_2a_1b_1b_3a_3$\\
+III & $b_4$ & $b_4a_4a_5a_6b_6$\\
+IV & $a_0$ & $a_4a_5a_6b_6b_4$\\
+V & $a_0$ & $a_0a_1a_2b_2b_0$\\
+\bottomrule
+\end{tabular}
+\end{center}
+These five cycles contradict the condition in every maximal class.
+For the last assertion, $L=\varnothing$ would leave the nonbipartite
+graph $H$; a nonempty $L$ is excluded by the preceding argument.
+\end{proof}
+
+The nonempty and separately-bipartite variants are not asserted in the
+printed Question 5.3. The corollary identifies their obstruction without
+substituting them for the source's quantifiers.
+
+\section{Coverage and verification}
+\begin{center}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.30\linewidth}>{\raggedright\arraybackslash}p{0.64\linewidth}@{}}
+\toprule
+Source item in \cite{hausmann} & Coverage\\
+\midrule
+Question 5.4 & Answered: no, by Theorem~\ref{thm:main}.\\
+Earlier answer to Question 5.4 & Alternative proof; prior proof
+AFTD (2026), using the Wagner graph.\\
+Questions 5.1 and 5.2 & Not covered; these concern worst-case cut ratios.\\
+Question 5.3 & Answered: yes with empty parts, by
+Corollary~\ref{cor:neighbor}. Nonempty strengthening: not posed;
+obstruction proved on $H$.\\
+Question 5.5 & Not covered; $H$ has a five-cycle and is outside its
+odd-girth-at-least-seven class.\\
+Lemma 4.7 & Prior proof cited (Berke--Szab\'o, 2007, as stated by
+Hausmann); order-six bound, not reproved here.\\
+Conjecture 1.2 & Not covered; rejecting this structural sufficient
+condition does not reject the weighted $4/5$ inequality.\\
+Section 5, Wagner graph example & Prior proof cited (Hausmann, 2026);
+an individual weighted cut ratio may decrease. Not reproved here.\\
+Induced copies and disjoint unions of $H$ & Not posed; proved in
+Corollary~\ref{cor:induced}.\\
+\cite[Section 5, item 2]{aftd}, constant existence & Answered: yes;
+prior order-six bound cited; Corollary~\ref{cor:universal} gives
+$4\leq K_5\leq6$.\\
+\cite[Section 5, item 3]{aftd}, order three at higher odd girth &
+Not covered. The five-cycle in $H$ excludes this example.\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The written proof establishes the classification and the exact value
+$\kappa(H)=4$. The accompanying \texttt{verify.py} enumerates all
+$2^{14}=16{,}384$ vertex subsets: $435$ are independent, $49$ are
+maximal independent, and none leaves all complementary components of
+order at most three. It also checks Table~\ref{tab:classes} and the
+partition attaining four.
+It also checks every displayed odd cycle and tests the component-union
+bipartiteness condition on all $435$ independent sets: the empty set
+is its only solution on $H$.
+An additional enumeration of $256$ subsets reproduces the earlier
+Wagner-graph obstruction.
+
+For the corresponding formal statement, the pinned
+\href{https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Combinatorics/Graph/ComponentPacking/HausmannQuestion54Refutation.lean}{\texttt{HausmannQuestion54Refutation.lean}}
+defines \texttt{claim} as the full affirmative assertion of Question 5.4.
+Its declaration \texttt{result :}\ $\neg$\texttt{claim} proves the negation using the
+same labelled graph (labels $i=a_i$, $7+i=b_i$). Its helpers
+\texttt{legal}, \texttt{four\_obstruction}, and \texttt{residual\_large}
+establish, respectively, the degree/odd-girth hypotheses, four distinct
+connected residual vertices for every independent set, and failure of
+the component-order-three condition. The five-class classification and
+the upper bound attaining four, and the three corollaries are written proofs
+above. The odd-cycle table and the empty-set-only count are also finite
+checks in \texttt{verify.py}; they are not additional Lean declarations.
+
+The earlier Wagner-graph source is the
+\href{https://github.com/rainwangphy/aftd-platform/blob/433d28c73eba86e5864ff92226afde4bb1c6e270/lean/AFTD/Kb/Tcs/SubcubicOddGirthFivePartitionComponentLeThreeNegation.lean}{pinned AFTD module}.
+Its main declaration,
+\nolinkurl{subcubic_odd_girth_five_partition_component_le_three_negation},
+negates the universal partition assertion for triangle-free nonbipartite
+subcubic graphs. The declaration ending in \texttt{\_wg\_key} gives
+four connected complementary vertices for each independent set in the
+Wagner graph. Its degree, triangle-exclusion, and nonbipartiteness
+declarations end in \texttt{\_wg\_maxDegree}, \texttt{\_wg\_cliqueFree},
+and \texttt{\_wg\_not\_bipartite}.
+The explicit cycle $0,1,2,3,4,0$ in that graph supplies the exact
+odd-girth-five hypothesis. These declarations concern the Wagner graph,
+not the five-class proof or either new obstruction for $H$.
+
+\begin{thebibliography}{9}
+\bibitem{aftd}
+AFTD, \emph{Subcubic Triangle-Free Non-Bipartite Graphs Do Not Always
+Admit Independent Partitions with Complementary Component Order at Most Three},
+November 5, 2026, especially Sections 3--5.
+\href{https://rainwangphy.github.io/aftd-platform/blog/2026-11-05-op-1087/}{Wagner-graph counterexample}.
+
+\bibitem{hausmann}
+Will Hausmann, \emph{Weighted Max Cut in Subcubic Graphs},
+arXiv:2611.05178v1, November 3, 2026.
+\href{https://arxiv.org/html/2611.05178v1}{Full text},
+especially Lemma 4.7 and Section 5, Questions 5.1--5.5.
+
+\bibitem{cranston}
+Daniel W. Cranston and Matthew P. Yancey,
+\emph{Vertex Partitions into an Independent Set and a Forest with Each
+Component Small}, SIAM Journal on Discrete Mathematics
+\textbf{35}(3) (2021), 1769--1791.
+\href{https://arxiv.org/html/2006.11445v2}{arXiv:2006.11445v2}, Theorem 1.
+\end{thebibliography}
+
+\smallskip
+\noindent\small
+\copyright\ 2026 Haobo Ma and Wenlin Zhang.
+Licensed under \href{https://creativecommons.org/licenses/by/4.0/}
+{Creative Commons Attribution 4.0 International (CC BY 4.0)}.
+\end{document}

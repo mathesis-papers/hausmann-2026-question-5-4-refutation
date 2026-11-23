@@ -1,0 +1,66 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 76398,
+      "matches_public": true,
+      "path": "paper.pdf",
+      "public_sha256": "e09b8f545622a1545522c433bdb2bdb83bc422f6ae3b1f6f86bc4911dcb83437",
+      "sha256": "e09b8f545622a1545522c433bdb2bdb83bc422f6ae3b1f6f86bc4911dcb83437"
+    },
+    "source": {
+      "bytes": 14924,
+      "matches_public": true,
+      "path": "source.archive",
+      "public_sha256": "3a25ae0cd49e98b08ddffd95cbf8567921dfb0f23af27aa12b9dbac5d8a9b68a",
+      "sha256": "3a25ae0cd49e98b08ddffd95cbf8567921dfb0f23af27aa12b9dbac5d8a9b68a"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "Following AFTD's negative answer dated November 5, 2026, to Hausmann's Question 5.4 in Weighted Max Cut in Subcubic Graphs (arXiv:2611.05178v1, Section 5), we give a different counterexample with an exact residual-order calculation: the generalized Petersen graph GP(7,2) has odd girth five, but deleting any independent set leaves a component with at least four vertices. We prove this by classifying its maximal independent sets into five symmetry classes. The bound four is attained on this graph. The same classification gives an obstruction to the nonempty-independent-side version of Question 5.3; its printed quantifiers admit an empty-side solution.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 2,
+    "doi": null,
+    "lean_source": {
+      "revision": "6974dba01daa1a25cc74b87a86c191e95fe2c681",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Combinatorics/Graph/ComponentPacking/HausmannQuestion54Refutation.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "bytes": 76398,
+      "sha256": "e09b8f545622a1545522c433bdb2bdb83bc422f6ae3b1f6f86bc4911dcb83437",
+      "url": "/api/v1/collected-papers/hausmann-2026-question-5-4-refutation/files/pdf?version=2"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-23T01:03:47.612428612Z",
+    "record": "hausmann-2026-question-5-4-refutation",
+    "repository_name": "hausmann-2026-question-5-4-refutation",
+    "source": {
+      "bytes": 14924,
+      "sha256": "3a25ae0cd49e98b08ddffd95cbf8567921dfb0f23af27aa12b9dbac5d8a9b68a",
+      "url": "/api/v1/collected-papers/hausmann-2026-question-5-4-refutation/files/source?version=2"
+    },
+    "title": "Residual order four in GP(7,2): an alternative proof for Hausmann's Question 5.4 (arXiv:2611.05178v1, Section 5), after AFTD (2026)",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-23T01:03:47.612428612Z",
+        "revision": "2",
+        "version": 2
+      }
+    ],
+    "work": "hausmann-2026-question-5-4-refutation"
+  }
+}

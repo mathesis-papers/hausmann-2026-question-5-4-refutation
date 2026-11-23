@@ -1,0 +1,15 @@
+{
+  "id": "hausmann-2026-question-5-4-refutation",
+  "revision": 2,
+  "problem_ids": ["hausmann-2026-question-5-4-refutation"],
+  "topic": "Hausmann, Weighted Max Cut in Subcubic Graphs, arXiv:2611.05178v1, Section 5, Question 5.4",
+  "title": "Residual order four in GP(7,2): an alternative proof for Hausmann's Question 5.4 (arXiv:2611.05178v1, Section 5), after AFTD (2026)",
+  "creators": [
+    {"name": "Ma, Haobo", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+    {"name": "Zhang, Wenlin", "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"}
+  ],
+  "abstract": "Following AFTD's negative answer dated November 5, 2026, to Hausmann's Question 5.4 in Weighted Max Cut in Subcubic Graphs (arXiv:2611.05178v1, Section 5), we give a different counterexample with an exact residual-order calculation: the generalized Petersen graph GP(7,2) has odd girth five, but deleting any independent set leaves a component with at least four vertices. We prove this by classifying its maximal independent sets into five symmetry classes. The bound four is attained on this graph. The same classification gives an obstruction to the nonempty-independent-side version of Question 5.3; its printed quantifiers admit an empty-side solution.",
+  "summary": "An alternative to AFTD's earlier Wagner-graph counterexample: GP(7,2) has exact residual optimum four. Three corollaries give the universal interval 4 to 6, induced-subgraph and disjoint-union consequences, and a distinction between the empty-side quantifiers of Question 5.3 and its unposed nonempty strengthening. Written proofs, finite checks and the two pinned Lean modules have separate stated scopes.",
+  "license": "cc-by-4.0",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Combinatorics/Graph/ComponentPacking/HausmannQuestion54Refutation.lean"
+}

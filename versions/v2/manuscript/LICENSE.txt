@@ -1,0 +1,9 @@
+Copyright 2026 Haobo Ma and Wenlin Zhang.
+
+This note and its accompanying original sources are licensed under the
+Creative Commons Attribution 4.0 International license (CC BY 4.0).
+License identifier: cc-by-4.0.
+License text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Attribution: Haobo Ma and Wenlin Zhang, A counterexample to Hausmann's
+Question 5.4, 2026.
