@@ -31,6 +31,7 @@
     "concept_doi": "10.5281/zenodo.24409055",
     "current_version": 2,
     "doi": "10.5281/zenodo.24409056",
+    "kind": "note",
     "lean_source": {
       "revision": "6974dba01daa1a25cc74b87a86c191e95fe2c681",
       "url": "https://github.com/the-omega-institute/trureturing/blob/6974dba01daa1a25cc74b87a86c191e95fe2c681/D5/S3/Combinatorics/Graph/ComponentPacking/HausmannQuestion54Refutation.lean"
@@ -55,10 +56,12 @@
     "title": "Residual order four in GP(7,2): an alternative proof for Hausmann's Question 5.4 (arXiv:2611.05178v1, Section 5), after AFTD (2026)",
     "versions": [
       {
+        "changelog": null,
         "previous_version": null,
         "published_on": "2026-11-23T01:03:47.612428612Z",
         "revision": "2",
-        "version": 2
+        "version": 2,
+        "version_label": null
       }
     ],
     "work": "hausmann-2026-question-5-4-refutation"
